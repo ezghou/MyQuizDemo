@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/mainquiz"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:textAlignment="center"
+        android:id="@+id/title"
+        android:textColor="#FFFF"
+        android:textSize="26sp"
+        android:background="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:lineSpacingExtra="6dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="24dp"
+        android:layout_height="wrap_content"
+        android:text="Respire Rumble" />
+
+    <LinearLayout
+        android:layout_marginTop="90dp"
+        android:layout_gravity="center"
+        android:background="#EC8935"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/question_Text_View"
+            android:textColor="#FFFF"
+            android:textSize="26sp"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_height="220dp"
+            android:text="Guess Animals in English language" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/answer_Text_View"
+        android:layout_marginBottom="70dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:textColor="#332FA2"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/submit_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:layout_marginHorizontal="15dp"
+        >
+
+    </Button>
+
+</LinearLayout>

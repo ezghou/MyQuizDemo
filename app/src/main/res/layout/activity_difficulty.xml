@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CAF50"
+    tools:context=".SplashActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/difficulty1_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level 1"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:layout_marginHorizontal="15dp"
+            android:enabled="true"
+            >
+
+        </Button>
+
+        <Button
+            android:id="@+id/difficulty2_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level 2"
+            android:textColor="@color/black"
+            android:backgroundTint="#A5A5A5"
+            android:layout_marginHorizontal="15dp"
+            android:enabled="false"
+            >
+
+        </Button>
+
+        <Button
+            android:id="@+id/difficulty3_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level 3"
+            android:textColor="@color/black"
+            android:backgroundTint="#A5A5A5"
+            android:layout_marginHorizontal="15dp"
+            android:enabled="false"
+            >
+
+        </Button>
+
+        <Button
+            android:id="@+id/difficulty4_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level 4"
+            android:textColor="@color/black"
+            android:backgroundTint="#A5A5A5"
+            android:layout_marginHorizontal="15dp"
+            android:enabled="false"
+            >
+
+        </Button>
+
+        <Button
+            android:id="@+id/difficulty5_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Level 5"
+            android:textColor="@color/black"
+            android:backgroundTint="#A5A5A5"
+            android:layout_marginHorizontal="15dp"
+            android:enabled="false"
+            >
+
+        </Button>
+
+<!--        <Button-->
+<!--            android:id="@+id/difficulty6_Button"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Level 6"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:backgroundTint="@color/white"-->
+<!--            android:layout_marginHorizontal="15dp"-->
+<!--            android:clickable="false"-->
+<!--            >-->
+
+<!--        </Button>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/difficulty7_Button"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Level 7"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:backgroundTint="@color/white"-->
+<!--            android:layout_marginHorizontal="15dp"-->
+<!--            android:clickable="false"-->
+<!--            >-->
+
+<!--        </Button>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/difficulty8_Button"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Level 8"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:backgroundTint="@color/white"-->
+<!--            android:layout_marginHorizontal="15dp"-->
+<!--            android:clickable="false"-->
+<!--            >-->
+
+<!--        </Button>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/difficulty9_Button"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Level 9"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:backgroundTint="@color/white"-->
+<!--            android:layout_marginHorizontal="15dp"-->
+<!--            android:clickable="false"-->
+<!--            >-->
+
+<!--        </Button>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/difficulty10_Button"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Level 10"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:backgroundTint="@color/white"-->
+<!--            android:layout_marginHorizontal="15dp"-->
+<!--            android:clickable="false"-->
+<!--            >-->
+
+<!--        </Button>-->
+    </LinearLayout>
+
+</RelativeLayout>
