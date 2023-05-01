@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         submitButton = findViewById(R.id.submit_Button);
 
         submitButton.setOnClickListener(this);
-        
+
         loadNewQuestion();
     }
 
