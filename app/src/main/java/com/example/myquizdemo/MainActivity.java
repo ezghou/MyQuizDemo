@@ -3,6 +3,7 @@ package com.example.myquizdemo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,16 +12,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity  implements View.OnClickListener{
-
     TextView questionTextView;
     EditText answerTextView;
     Button submitButton;
-
-    int totalQuestion = QuestionAnswer.questionsLevel1.length;
+    int totalQuestion = 0;
     int currentQuestionIndex = 0;
     String givenAnswer = "";
     String answer = "";
-
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -33,7 +31,6 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         submitButton = findViewById(R.id.submit_Button);
 
         submitButton.setOnClickListener(this);
-
         loadNewQuestion();
 
     }
@@ -42,50 +39,53 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     public void onClick(View view) {
         Button clickedButton = (Button) view;
         givenAnswer =  answerTextView.getText().toString();
+
         if(clickedButton.getId() == R.id.submit_Button){
             if(givenAnswer.toLowerCase().equals(answer)){
                 Toast.makeText(MainActivity.this, "Correct", Toast.LENGTH_SHORT).show();
-                if(currentQuestionIndex == 3) {
+                if(currentQuestionIndex == totalQuestion-1) {
                     Difficulty.clickedButton++;
                     Toast.makeText(MainActivity.this, "clickedButton: " + Difficulty.clickedButton, Toast.LENGTH_LONG).show();
                     enableButton();
                     currentQuestionIndex = 0;
+                    openCompleteLevel();
                 }else{
                     currentQuestionIndex++;
                 }
-
                 loadNewQuestion();
                 answerTextView.setText("");
             }else{
                 Toast.makeText(MainActivity.this, "Wrong", Toast.LENGTH_SHORT).show();
-
             }
         }
-
     }
-
     void loadNewQuestion(){
 //        Toast.makeText(MainActivity.this, "clickedButton: " + Difficulty.clickedButton, Toast.LENGTH_LONG).show();
         switch (Difficulty.clickedButton) {
             case 1:
                 questionTextView.setText(QuestionAnswer.questionsLevel1[currentQuestionIndex]);
                 answer = QuestionAnswer.answersLevel1[currentQuestionIndex].toLowerCase();
+                totalQuestion = QuestionAnswer.questionsLevel1.length;
                 break;
             case 2:
                 questionTextView.setText(QuestionAnswer.questionsLevel2[currentQuestionIndex]);
                 answer = QuestionAnswer.answersLevel2[currentQuestionIndex].toLowerCase();
+                totalQuestion = QuestionAnswer.questionsLevel2.length;
                 break;
             case 3:
                 questionTextView.setText(QuestionAnswer.questionsLevel3[currentQuestionIndex]);
                 answer = QuestionAnswer.answersLevel3[currentQuestionIndex].toLowerCase();
+                totalQuestion = QuestionAnswer.questionsLevel3.length;
                 break;
             case 4:
                 questionTextView.setText(QuestionAnswer.questionsLevel4[currentQuestionIndex]);
                 answer = QuestionAnswer.answersLevel4[currentQuestionIndex].toLowerCase();
+                totalQuestion = QuestionAnswer.questionsLevel4.length;
                 break;
             case 5:
                 questionTextView.setText(QuestionAnswer.questionsLevel5[currentQuestionIndex]);
                 answer = QuestionAnswer.answersLevel5[currentQuestionIndex].toLowerCase();
+                totalQuestion = QuestionAnswer.questionsLevel5.length;
                 break;
             default:
                 break;
@@ -113,6 +113,11 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             default:
                 break;
         }
+    }
+
+    public void openCompleteLevel(){
+        Intent intent = new Intent(this, CompleteLevel.class);
+        startActivity(intent);
     }
 
 }

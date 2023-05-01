@@ -7,7 +7,22 @@
     android:background="#4CAF50"
     tools:context=".SplashActivity">
 
+    <TextView
+        android:textAlignment="center"
+        android:id="@+id/question_Text_View"
+        android:textColor="#FFFF"
+        android:textSize="26sp"
+        android:background="@drawable/image"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:gravity="center"
+        android:lineSpacingExtra="6dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="20dp"
+        android:text="Guess Animals in English language">
 
+
+    </TextView>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -76,73 +91,8 @@
             android:layout_marginHorizontal="15dp"
             android:enabled="false"
             >
-
         </Button>
 
-<!--        <Button-->
-<!--            android:id="@+id/difficulty6_Button"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Level 6"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:backgroundTint="@color/white"-->
-<!--            android:layout_marginHorizontal="15dp"-->
-<!--            android:clickable="false"-->
-<!--            >-->
-
-<!--        </Button>-->
-
-<!--        <Button-->
-<!--            android:id="@+id/difficulty7_Button"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Level 7"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:backgroundTint="@color/white"-->
-<!--            android:layout_marginHorizontal="15dp"-->
-<!--            android:clickable="false"-->
-<!--            >-->
-
-<!--        </Button>-->
-
-<!--        <Button-->
-<!--            android:id="@+id/difficulty8_Button"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Level 8"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:backgroundTint="@color/white"-->
-<!--            android:layout_marginHorizontal="15dp"-->
-<!--            android:clickable="false"-->
-<!--            >-->
-
-<!--        </Button>-->
-
-<!--        <Button-->
-<!--            android:id="@+id/difficulty9_Button"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Level 9"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:backgroundTint="@color/white"-->
-<!--            android:layout_marginHorizontal="15dp"-->
-<!--            android:clickable="false"-->
-<!--            >-->
-
-<!--        </Button>-->
-
-<!--        <Button-->
-<!--            android:id="@+id/difficulty10_Button"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Level 10"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:backgroundTint="@color/white"-->
-<!--            android:layout_marginHorizontal="15dp"-->
-<!--            android:clickable="false"-->
-<!--            >-->
-
-<!--        </Button>-->
     </LinearLayout>
 
 </RelativeLayout>
