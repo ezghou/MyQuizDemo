@@ -23,7 +23,7 @@ public class CompleteLevel extends AppCompatActivity {
         continueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openMAinActivity();
+                finish();
             }
         });
 
