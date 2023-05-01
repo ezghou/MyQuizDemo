@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/mainquiz"
+    android:background="@drawable/respiremaingame"
     tools:context=".MainActivity">
 
 
@@ -15,18 +15,17 @@
         android:id="@+id/title"
         android:textColor="#FFFF"
         android:textSize="26sp"
-        android:background="@color/black"
+        android:background="@drawable/respiretextheading"
         android:layout_width="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
         android:lineSpacingExtra="6dp"
         android:layout_marginHorizontal="15dp"
         android:layout_marginTop="24dp"
-        android:layout_height="wrap_content"
-        android:text="Respire Rumble" />
+        android:layout_height="wrap_content" />
 
     <LinearLayout
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="75dp"
         android:layout_gravity="center"
         android:background="#EC8935"
         android:orientation="vertical"
@@ -44,8 +43,7 @@
             android:gravity="center"
             android:lineSpacingExtra="6dp"
             android:layout_marginHorizontal="15dp"
-            android:layout_height="220dp"
-            android:text="Guess Animals in English language" />
+            android:layout_height="220dp" />
 
     </LinearLayout>
 
@@ -57,11 +55,14 @@
         android:textColor="#332FA2"
         android:textSize="32sp"
         android:gravity="center"
+        android:maxLength="40"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="20dp"
         android:background="@color/white"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
 
     <Button
         android:id="@+id/submit_Button"
@@ -70,6 +71,7 @@
         android:text="Submit"
         android:textColor="@color/black"
         android:backgroundTint="@color/white"
+        android:layout_marginTop="30dp"
         android:layout_marginHorizontal="15dp"
         >
 
