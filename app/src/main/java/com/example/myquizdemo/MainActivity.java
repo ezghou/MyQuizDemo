@@ -44,15 +44,20 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             if(givenAnswer.toLowerCase().equals(answer)){
                 Toast.makeText(MainActivity.this, "Correct", Toast.LENGTH_SHORT).show();
                 if(currentQuestionIndex == totalQuestion-1) {
-                    Difficulty.clickedButton++;
-                    Toast.makeText(MainActivity.this, "clickedButton: " + Difficulty.clickedButton, Toast.LENGTH_LONG).show();
-                    enableButton();
-                    currentQuestionIndex = 0;
-                    openCompleteLevel();
+                    if(Difficulty.clickedButton == 5){
+                        openCompleteGame();
+                    }
+                    else{
+                        Difficulty.clickedButton++;
+                        enableButton();
+                        currentQuestionIndex = 0;
+                        openCompleteLevel();
+                    }
+                    loadNewQuestion();
                 }else{
                     currentQuestionIndex++;
+                    loadNewQuestion();
                 }
-                loadNewQuestion();
                 answerTextView.setText("");
             }else{
                 Toast.makeText(MainActivity.this, "Wrong", Toast.LENGTH_SHORT).show();
@@ -115,9 +120,27 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         }
     }
 
+    public void disableButton(){
+        Difficulty.difficultyButton2.setEnabled(false);
+        Difficulty.difficultyButton2.setBackgroundColor(getResources().getColor(R.color.white));
+        Difficulty.difficultyButton3.setEnabled(false);
+        Difficulty.difficultyButton3.setBackgroundColor(getResources().getColor(R.color.white));
+        Difficulty.difficultyButton4.setEnabled(false);
+        Difficulty.difficultyButton4.setBackgroundColor(getResources().getColor(R.color.white));
+        Difficulty.difficultyButton5.setEnabled(false);
+        Difficulty.difficultyButton5.setBackgroundColor(getResources().getColor(R.color.white));
+    }
+
     public void openCompleteLevel(){
         Intent intent = new Intent(this, CompleteLevel.class);
         startActivity(intent);
+        finish();
+    }
+
+    public void openCompleteGame(){
+        Intent intent = new Intent(this, GameComplete.class);
+        startActivity(intent);
+        finish();
     }
 
 }
