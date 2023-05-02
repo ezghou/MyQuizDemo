@@ -15,11 +15,6 @@ public class Difficulty extends AppCompatActivity {
     public static Button difficultyButton3;
     public static Button difficultyButton4;
     public static Button difficultyButton5;
-    public static Button difficultyButton6;
-    public static Button difficultyButton7;
-    public static Button difficultyButton8;
-    public static Button difficultyButton9;
-    public static Button difficultyButton10;
     public static int clickedButton;
 
 

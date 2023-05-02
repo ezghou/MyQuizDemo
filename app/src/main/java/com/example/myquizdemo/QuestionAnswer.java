@@ -12,10 +12,10 @@ public class QuestionAnswer {
     };
 
     public static String answersLevel1[]= {
-            " ",
-            " ",
-            " ",
-            " "
+            "Spleen",
+            "leukopenia",
+            "Platelets",
+            "frontal"
     };
 
     public static String questionsLevel2[] = {
