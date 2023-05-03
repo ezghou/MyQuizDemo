@@ -53,7 +53,6 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
                         currentQuestionIndex = 0;
                         openCompleteLevel();
                     }
-                    loadNewQuestion();
                 }else{
                     currentQuestionIndex++;
                     loadNewQuestion();
