@@ -25,31 +25,33 @@
         android:layout_height="wrap_content" />
 
     <LinearLayout
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="30dp"
         android:layout_gravity="center"
         android:background="#EC8935"
         android:orientation="vertical"
         android:gravity="center"
+        android:layout_marginHorizontal="2dp"
         android:layout_width="match_parent"
-        android:layout_height="250dp">
+        android:layout_height="300dp">
 
         <TextView
             android:textAlignment="center"
             android:id="@+id/question_Text_View"
             android:textColor="#FFFF"
-            android:textSize="26sp"
+            android:textSize="25sp"
             android:background="@color/black"
             android:layout_width="match_parent"
             android:gravity="center"
             android:lineSpacingExtra="6dp"
             android:layout_marginHorizontal="15dp"
-            android:layout_height="220dp" />
+            android:layout_height="275dp"
+            android:maxLength="218"/>
 
     </LinearLayout>
 
     <EditText
         android:id="@+id/answer_Text_View"
-        android:layout_marginBottom="70dp"
+        android:layout_marginBottom="20dp"
         android:clickable="true"
         android:focusable="true"
         android:textColor="#332FA2"
@@ -64,17 +66,40 @@
         android:layout_height="wrap_content"
         />
 
-    <Button
-        android:id="@+id/submit_Button"
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/hint_Button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:textColor="@color/black"
+            android:background="@drawable/bulb"
+            android:layout_marginHorizontal="15dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true">
+
+        </ImageButton>
+    </RelativeLayout>
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Submit"
-        android:textColor="@color/black"
-        android:backgroundTint="@color/white"
-        android:layout_marginTop="30dp"
-        android:layout_marginHorizontal="15dp"
-        >
+        android:layout_marginBottom="40dp">
 
-    </Button>
+        <Button
+            android:id="@+id/submit_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:layout_marginHorizontal="15dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            >
+
+        </Button>
+    </RelativeLayout>
 
 </LinearLayout>

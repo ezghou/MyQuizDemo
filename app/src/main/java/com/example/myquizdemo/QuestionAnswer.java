@@ -4,7 +4,7 @@ public class QuestionAnswer {
 
 
     public static String questionsLevel1[] = {
-            "11111Surplus red blood cells, needed to meet an emergency, are MAINLY stored in what organ of the human body?",
+            "11111Surplus red blood cells, needed to meet an emergency, are MAINLY stored in what organ of the human body?11111Surplus red blood cells, needed to meet an emergency, are MAINLY stored in what organ of the human body?11111Surplus red blood cells, needed to meet an emergency, are MAINLY stored in what organ of the human body?",
             "111111The condition in which there is a DECREASE in the number of white blood cells in humans is known as:",
             "1111111It is the smallest FORMED elements of the blood.",
             "111111111In which cerebral lobes is the speech center located?"
