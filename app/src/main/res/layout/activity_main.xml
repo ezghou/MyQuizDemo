@@ -38,7 +38,7 @@
             android:textAlignment="center"
             android:id="@+id/question_Text_View"
             android:textColor="#FFFF"
-            android:textSize="25sp"
+            android:textSize="24.5sp"
             android:background="@color/black"
             android:layout_width="match_parent"
             android:gravity="center"
@@ -70,6 +70,18 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/hint_Text_View"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/hint_Button"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textSize="24sp">
+
+        </TextView>
+
         <ImageButton
             android:id="@+id/hint_Button"
             android:layout_width="70dp"

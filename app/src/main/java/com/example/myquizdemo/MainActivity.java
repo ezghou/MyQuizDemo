@@ -8,13 +8,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity  implements View.OnClickListener{
     TextView questionTextView;
+    TextView hintTextView;
     EditText answerTextView;
     Button submitButton;
+    ImageButton hintButton;
     int totalQuestion = 0;
     int currentQuestionIndex = 0;
     String givenAnswer = "";
@@ -26,9 +29,18 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        hintButton = (ImageButton) findViewById(R.id.hint_Button);
+        hintButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                displayHint();
+            }
+        });
+
         questionTextView = findViewById(R.id.question_Text_View);
         answerTextView = findViewById(R.id.answer_Text_View);
         submitButton = findViewById(R.id.submit_Button);
+        hintTextView = findViewById(R.id.hint_Text_View);
 
         submitButton.setOnClickListener(this);
 
@@ -39,6 +51,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
     public void onClick(View view) {
         Button clickedButton = (Button) view;
         givenAnswer =  answerTextView.getText().toString();
+
 
         if(clickedButton.getId() == R.id.submit_Button){
             if(givenAnswer.toLowerCase().equals(answer)){
@@ -55,6 +68,7 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
                     }
                 }else{
                     currentQuestionIndex++;
+                    removeHint();
                     loadNewQuestion();
                 }
                 answerTextView.setText("");
@@ -94,6 +108,41 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
             default:
                 break;
         }
+    }
+
+    public void displayHint(){
+        switch (Difficulty.clickedButton){
+            case 1:
+                hintTextView.setText("The answer have " + QuestionAnswer.hint1[currentQuestionIndex] + " letters.");
+                hintTextView.setBackgroundColor(getResources().getColor(R.color.white));
+                break;
+
+            case 2:
+                hintTextView.setText("The answer have " + QuestionAnswer.hint2[currentQuestionIndex] + " letters.");
+                hintTextView.setBackgroundColor(getResources().getColor(R.color.white));
+                break;
+
+            case 3:
+                hintTextView.setText("The answer have " + QuestionAnswer.hint3[currentQuestionIndex] + " letters.");
+                hintTextView.setBackgroundColor(getResources().getColor(R.color.white));
+                break;
+
+            case 4:
+                hintTextView.setText("The answer have " + QuestionAnswer.hint4[currentQuestionIndex] + " letters.");
+                hintTextView.setBackgroundColor(getResources().getColor(R.color.white));
+                break;
+
+            case 5:
+                hintTextView.setText("The answer have " + QuestionAnswer.hint5[currentQuestionIndex] + " letters.");
+                hintTextView.setBackgroundColor(getResources().getColor(R.color.white));
+                break;
+
+        }
+    }
+
+    public void removeHint(){
+        hintTextView.setText("");
+        hintTextView.setBackgroundColor(0x00000000);
     }
 
     public void enableButton(){
