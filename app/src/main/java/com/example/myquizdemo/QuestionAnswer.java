@@ -18,6 +18,13 @@ public class QuestionAnswer {
             "frontal"
     };
 
+    public static String hint1[]= {
+            "6",
+            "10",
+            "15",
+            "20"
+    };
+
     public static String questionsLevel2[] = {
             "22222222Surplus red blood cells, needed to meet an emergency, are MAINLY stored in what organ of the human body?",
             "22222222The condition in which there is a DECREASE in the number of white blood cells in humans is known as:",
@@ -31,6 +38,13 @@ public class QuestionAnswer {
             "leukopenia",
             "Platelets",
             "frontal"
+    };
+
+    public static String hint2[]= {
+            "6",
+            "10",
+            "15",
+            "20"
     };
 
     public static String questionsLevel3[] = {
@@ -48,6 +62,13 @@ public class QuestionAnswer {
             "frontal"
     };
 
+    public static String hint3[]= {
+            "6",
+            "10",
+            "15",
+            "20"
+    };
+
     public static String questionsLevel4[] = {
             "44444Surplus red blood cells, needed to meet an emergency, are MAINLY stored in what organ of the human body?",
             "444444The condition in which there is a DECREASE in the number of white blood cells in humans is known as:",
@@ -61,6 +82,12 @@ public class QuestionAnswer {
             "leukopenia",
             "Platelets",
             "frontal"
+    };
+    public static String hint4[]= {
+            "6",
+            "10",
+            "15",
+            "20"
     };
 
     public static String questionsLevel5[] = {
@@ -76,5 +103,11 @@ public class QuestionAnswer {
             "leukopenia",
             "Platelets",
             "frontal"
+    };
+    public static String hint5[]= {
+            "6",
+            "10",
+            "15",
+            "20"
     };
 }
