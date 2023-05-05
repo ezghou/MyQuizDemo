@@ -21,8 +21,8 @@ public class QuestionAnswer {
     public static String hint1[]= {
             "6",
             "10",
-            "15",
-            "20"
+            "9",
+            "7"
     };
 
     public static String questionsLevel2[] = {
@@ -43,8 +43,8 @@ public class QuestionAnswer {
     public static String hint2[]= {
             "6",
             "10",
-            "15",
-            "20"
+            "9",
+            "7"
     };
 
     public static String questionsLevel3[] = {
@@ -65,8 +65,8 @@ public class QuestionAnswer {
     public static String hint3[]= {
             "6",
             "10",
-            "15",
-            "20"
+            "9",
+            "7"
     };
 
     public static String questionsLevel4[] = {
@@ -86,8 +86,8 @@ public class QuestionAnswer {
     public static String hint4[]= {
             "6",
             "10",
-            "15",
-            "20"
+            "9",
+            "7"
     };
 
     public static String questionsLevel5[] = {
@@ -107,7 +107,7 @@ public class QuestionAnswer {
     public static String hint5[]= {
             "6",
             "10",
-            "15",
-            "20"
+            "9",
+            "7"
     };
 }
